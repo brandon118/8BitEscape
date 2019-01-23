@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html class="root">
-    <head>
-        <link rel="stylesheet" type="text/css" href="8Bit.css">
-    </head>
-		<body class="backGround8Bit">
-			<div class="header">
-				<span class="title">8 Bit Escape</span>
-			</div>
-		<div class="diceContainer">
-			<div class="dice">
-				<h1 id="dice" class="numbers">1</h1>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="8Bit.css">
+</head>
+
+<body class="backGround8Bit">
+	<div class="header">
+		<span class="title">8 Bit Escape</span>
+	</div>
+	<div class="diceContainer">
+		<div class="dice">
+			<h1 id="dice" class="numbers">1</h1>
+		</div>
+		<br>
+		<button class="startButton" onclick="rollDice()">Roll Dice</button>
+	</div>
+
+	<div class="challengeContainer">
+		<div class="chal">
+			<div id="Question">
+				This is where your question will appear
 			</div>
 			<br>
-			<button class="startButton" onclick="rollDice()">Roll Dice</button>
+			<div id="answer">
 			</div>
-			
-			<div class="challengeContainer">
-				
-				<div class = "chal">
-					<div  id="Question">
-						This is where your question will appear
-					</div>
-					<br>
-					<div id = "answer">
-					</div>
-				</div>
-				<button class="SmallButton" id="RevealAnswer" onclick="AnswerGen()">
-					Reveal the answer
-				</button>
-				<button class="challengeButton" onclick="ChallengeGen()">Challenge</button>
-			</div>
-			</body>
-			<script src="8Bit.js"></script>
-			<script src="ChallengeGen.js"></script>
+		</div>
+		<button class="SmallButton" id="RevealAnswer" onclick="AnswerGen()">
+			Reveal the answer
+		</button>
+		<button class="challengeButton" onclick="ChallengeGen()">
+			Challenge
+		</button>
+	</div>
+</body>
+<script src="8Bit.js"></script>
+<script src="ChallengeGen.js"></script>
+
 </html>
