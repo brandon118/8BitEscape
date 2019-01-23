@@ -7,7 +7,7 @@
 }
 .header{
     height: 17%;
-    width: 100%;
+    width:150%;
     background-color: rgb(95, 88, 88);
     position: absolute;
     left: 0px;
@@ -35,7 +35,7 @@
     font-family: 'Courier New', Courier, monospace;
     font: bold;
     word-wrap: break-word;
-    font-size: 100%
+    font-size: 250%;
 }
 
 .backGround8Bit{
@@ -73,6 +73,9 @@
 
 .numbers{
     font-size: 600%;
+}
+.EverthingContainer{
+    margin-top: 15%;
 }
 
 .challengeButton{
@@ -114,7 +117,8 @@
 }
 
 .challengeContainer{
-    height: 90%;
+    min-height: 90%;
+    line-height: 300%;
     width: 50%;
     float: right;
     margin-top: 9%;
