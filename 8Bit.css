@@ -8,7 +8,7 @@
 .header{
     height: 17%;
     width: 100%;
-    background-color: gray;
+    background-color: rgb(95, 88, 88);
     position: absolute;
     left: 0px;
     top: 0px;
@@ -19,19 +19,25 @@
     height:250px;
     text-align:center;
     background-color: white;
-    margin-left: 20%;
-    margin-top: 10%;
+    margin-left: 28%;
+    border-radius: 10%;
     box-shadow: 50px 0px 200px lightgreen, -50px 0px 200px skyblue;
-    border-radius: 20px;
-    
 }
-.filler{
-    width: 100%;
-    height: 83%;
-    align-self: centers;
-
-
+.chal{
+    width:50%;
+    height:40%;
+    text-align:center;
+    background-color: white;
+    margin-left: 20%;
+    box-shadow: 50px 0px 200px lightgreen, -50px 0px 200px skyblue;
+    border: 4px solid black;
+    border-radius: 10%;
+    font-family: 'Courier New', Courier, monospace;
+    font: bold;
+    word-wrap: break-word;
+    font-size: 100%
 }
+
 .backGround8Bit{
     width: 100%;
     height: 100%;
@@ -44,21 +50,19 @@
     height: 200px;
     width: 400px;
     font-size: 400%;
-    margin-left: 200px;
     font-weight: bold;
     border-color: black;
-    border-width: 5px;
+    border-width: 10px;
     border-style: double;
-    float: left;
-    
+    margin-left: 17%;
 }
 
  .title {
-  background: url(coma_misti.jpg)-80px -80px;
+  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
   color: red;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: text;
+  background-clip: border-box;
   font-weight: bold;
   font-size: 100px;
   font-family: arial, helvetica;
@@ -72,19 +76,47 @@
     font-size: 600%;
 }
 
-.Question{
-    font-size: 200%
+.challengeButton{
+    float: right;
+    width: 400px;
+    height: 175px;
+    margin-top: 3%;
+    font-size: 300%;
+    background-color: red;
+    font-weight: bold;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    margin-right: 25%;
 }
-.QuestionHolder{
- margin-left: 20%;
-    border:4px solid black;
-    width:20%;
-    height:20%;
-    text-align:center;
-    background-color: white;
-    float: none; 
-    box-shadow: 50px 0px 200px lightgreen, -50px 0px 200px skyblue;
-    border-radius: 20px;
-        
-    
+.SmallButton{
+    float: right;
+    width: 400px;
+    height: 50px;
+    margin-top: 3%;
+    font-size: 150%;
+    background-color: red;
+    font-weight: bold;
+    border-style: double;
+    border-width: 10px;
+    border-color: black;
+    margin-right: 25%;
+}
+
+.challenge:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.diceContainer{
+    height: 90%;
+    width: 50%;
+    margin-top: 9%;
+    float: left;
+}
+
+.challengeContainer{
+    height: 90%;
+    width: 50%;
+    float: right;
+    margin-top: 9%;
 }

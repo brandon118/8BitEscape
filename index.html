@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html class="root">
-
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="8Bit.css">
-</head>
-
-<body class="backGround8Bit">
-
-	<body class="filler">
-		<div class="header"><span class="title"> 8 Bit Escape</span></div>
-
-		<div class="dice">
-			<h1 id="dice" class="numbers">1</h1>
-		</div>
-
-		<div class="QuestionHolder">
-			<h1 id= "chal" class="Question">HelloWorld</h1>
-		</div>
-		<br>
-		<button class="startButton" onclick="rollDice()">Roll Dice
-		</button>
-		<br>
-		<button class="startButton" onclick="ChallengeGen()">Challenge Question
-		</button>
-	</body>
-</body>
-
-
-
-
-
-<script src="8Bit.js"></script>
-<script src="ChallengeGen.js"></script>
-
+    <head>
+        <link rel="stylesheet" type="text/css" href="8Bit.css">
+    </head>
+		<body class="backGround8Bit">
+			<div class="header">
+				<span class="title">8 Bit Escape</span>
+			</div>
+		<div class="diceContainer">
+			<div class="dice">
+				<h1 id="dice" class="numbers">1</h1>
+			</div>
+			<br>
+			<button class="startButton" onclick="rollDice()">Roll Dice</button>
+			</div>
+			
+			<div class="challengeContainer">
+				
+				<div class = "chal">
+					<div  id="Question">
+						This is where your question will appear
+					</div>
+					<br>
+					<div id = "answer">
+					</div>
+				</div>
+				<button class="SmallButton" id="RevealAnswer" onclick="AnswerGen()">
+					Reveal the answer
+				</button>
+				<button class="challengeButton" onclick="ChallengeGen()">Challenge</button>
+			</div>
+			</body>
+			<script src="8Bit.js"></script>
+			<script src="ChallengeGen.js"></script>
 </html>
