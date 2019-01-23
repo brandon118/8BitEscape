@@ -62,7 +62,6 @@
   color: red;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-clip: border-box;
   font-weight: bold;
   font-size: 100px;
   font-family: arial, helvetica;
