@@ -1,41 +1,54 @@
 <!DOCTYPE html>
-<html class="root">
+<html>
 
 <head>
-	<link rel="stylesheet" type="text/css" href="8Bit.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
 </head>
 
-<body class="backGround8Bit">
-	<div class="header">
-		<span class="title">8 Bit Escape</span>
-	</div>
-	<div class="EverthingContainer">
-		<div class="diceContainer">
-			<div class="dice">
-				<h1 id="dice" class="numbers">1</h1>
-			</div>
-			<br>
-			<button class="startButton" onclick="rollDice()">Roll Dice</button>
-		</div>
-	</div>
-
-	<div class="challengeContainer">
-		<div class="chal">	<div id="Question">
-				This is where your question will appear
-			</div>
-			<br>
-			<div id="answer">
-			</div>
-		</div>
-		<button class="SmallButton" id="RevealAnswer" onclick="AnswerGen()">
-			Reveal the answer
-		</button>
-		<button class="challengeButton" onclick="ChallengeGen()">
-			Challenge
-		</button>
-	</div>
+<body style="	background-image: url(Matrix.gif);	background-position: top left;	background-size: 100%;	background-repeat: repeat;">
+  <div class="py-5 text-center text-white h-100 align-items-center d-flex" style="">
+    <div class="container py-5">
+      <div class="row">
+        <div class="mx-auto col-lg-8 col-md-12">
+          <h1 class="display-3 mb-4">8 Bit Escape</h1>
+          <p class="lead mb-5" contenteditable="true">A game developed by Getronics &amp; Navigo</p><a href="#" class="btn btn-lg mx-1 btn-dark">View Rules</a>
+          <div class="col-md-12"></div>
+          <div class="row">
+            <div class="col-md-6"><button class="btn btn-lg mx-1 btn-dark" onclick="rollDice()" >Roll A Dice</button></div>
+            <div class="col-md-6"><button class="btn btn-lg mx-1 btn-dark" data-target="#QuestionModal"  onclick="ChallengeGen()" data-toggle="collapse">Get a challenge question</button></div>
+          </div>
+        </div>
+      </div>
+      <div class="collapse" id="QuestionModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header bg-dark">
+              <h5 class="modal-title">Challenge Question</h5> <button type="button" class="close" data-target="#QuestionModal" data-toggle="collapse"> <span>×</span> </button>
+            </div>
+            <div class="modal-body bg-dark">
+              <p id="Question"> </p>
+              <p id="answer"> </p>
+            </div>
+            <div class="modal-footer bg-dark"> <button type="button" data-dismiss="modal" id="Show answer" onclick = "AnswerGen()" class="AnswerButton">See answer</button> </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 mx-auto align-items-center">
+        <div class="col-md-12 align-items-center d-flex flex-column" style="">
+          <div class="display-4 border bg-light w-25 h-25 rounded border-dark align-items-center text-dark text-lowercase flex-row flex-grow-0 justify-content-center pt-4 m-3 my-4 mt-0" id="dice">1</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="8Bit.js"></script>
+  <script src="ChallengeGen.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous" style=""></script>
+  <pingendo onclick="window.open('https://pingendo.com/', '_blank')" style="cursor:pointer;position: fixed;bottom: 20px;right:20px;padding:4px;background-color: #00b0eb;border-radius: 8px; width:220px;display:flex;flex-direction:row;align-items:center;justify-content:center;font-size:14px;color:white">Made with Pingendo Free&nbsp;&nbsp;<img src="https://pingendo.com/site-assets/Pingendo_logo_big.png" class="d-block" alt="Pingendo logo" height="16"></pingendo>
 </body>
-<script src="8Bit.js"></script>
-<script src="ChallengeGen.js"></script>
 
 </html>
