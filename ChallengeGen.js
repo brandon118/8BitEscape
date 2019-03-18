@@ -50,7 +50,7 @@ function QuestionRand() {
 
 }
 function ChallengeGen() {
-
+    
     if (counter == 0) {
         QuestionRand();
     }
@@ -60,11 +60,14 @@ function ChallengeGen() {
     document.getElementById("Question").innerHTML = HolderArray[0];
     document.getElementById("answer").innerHTML = "";
 
-
 }
 function AnswerGen() {
     document.getElementById("answer").innerHTML = HolderArray[1];
+    DisableButton();
+}
+function DisableButton(){
+    document.getElementById("ChallengeButton").disabled = true;
 }
 function closeQuestion(){
-    
+    document.getElementById("ChallengeButton").disabled = false;
 }

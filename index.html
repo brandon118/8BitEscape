@@ -18,7 +18,7 @@
           <div class="col-md-12"></div>
           <div class="row">
             <div class="col-md-6"><button class="btn btn-lg mx-1 btn-dark" onclick="rollDice()" >Roll A Dice</button></div>
-            <div class="col-md-6"><button class="btn btn-lg mx-1 btn-dark" data-target="#QuestionModal"  onclick="ChallengeGen()" data-toggle="collapse">Get a challenge question</button></div>
+            <div class="col-md-6"><button class="btn btn-lg mx-1 btn-dark" data-target="#QuestionModal" id="ChallengeButton" data-toggle="collapse" onclick="ChallengeGen()" data-toggle="collapse">Get a challenge question</button></div>
           </div>
         </div>
       </div>
@@ -26,7 +26,7 @@
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-header bg-dark">
-              <h5 class="modal-title">Challenge Question</h5> <button type="button" class="close" data-target="#QuestionModal" data-toggle="collapse"> <span>×</span> </button>
+              <h5 class="modal-title">Challenge Question</h5> <button type="button" class="close" data-target="#QuestionModal" onclick="closeQuestion()" data-toggle="collapse"> <span>×</span> </button>
             </div>
             <div class="modal-body bg-dark">
               <p id="Question"> </p>
