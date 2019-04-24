@@ -25,7 +25,7 @@ var ArrayOfQuestions = [
     Question22 = ["Name 3 consecutive days without the days of the week", "Yesterday, today, tomorrow"],
     Question23 = ["Tall i am young short i am old, while with life i glow, wind is my foe. What am I?", "Candle"],
     Question24 = ["What do pandas have that no other animals have", "Baby pandas"],
-    Question25 = ["I have legs, i have arms i have a back, i am not a back. What am I?", "Chairs / Skeleton"],
+    Question25 = ["I have legs, i have arms, i have a back, i am not a Human. What am I?", "Chair/ Skeleton"],
     Question26 = ["What was the presidents name in 1982", "Donald J. Trump"],
 ];
 
